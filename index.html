@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MyP Corporation: Inovação, Tecnologia e Identidade em Desenvolvimento de Software, IA e Soluções Digitais.">
+  <title>MyP Corporation | Inovação & Tecnologia</title>
+  
+  <!-- Tipografia e Ícones -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Bolinha do Cursor Personalizado -->
+  <div class="custom-cursor"></div>
+
+  <!-- TOPBAR / CABEÇALHO (100% DE LARGURA SEM DUPLICAÇÕES) -->
+  <header class="topbar">
+    <a class="logo" href="#inicio" aria-label="MyP Corporation, início">
+      <img src="imagens/minha logo heather.png" alt="Logo MyP Corporation" class="logo-img">
+      My<span>P</span>
+    </a>
+    
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#inicio" class="nav-link">Início</a>
+      <a href="#sobre" class="nav-link">Sobre</a>
+      <a href="#servicos" class="nav-link">Serviços</a>
+      <a href="#projetos" class="nav-link">Projetos</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+
+    <div class="topbar-actions">
+
+      <!-- SELETOR DE IDIOMAS -->
+      <div class="lang-selector">
+        <button class="lang-btn" id="lang-btn" aria-label="Selecionar idioma">
+          <span id="current-lang">PT</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        
+        <ul class="lang-dropdown" id="lang-dropdown">
+          <li data-lang="pt">PT — Português</li>
+          <li data-lang="en">EN — English</li>
+          <li data-lang="es">ES — Español</li>
+          <li data-lang="fr">FR — Français</li>
+        </ul>
+      </div>
+
+      <!-- BOTÃO DE CONTATO NO LUGAR DO LOGIN -->
+      <a href="https://wa.me/5511932079687?text=Ol%C3%A1!%20Vim%20pelo%20site." 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="button button-gold">
+        <i class="fa-solid fa-paper-plane"></i> Contato
+      </a>
+    </div>
+  </header>
+
+  
+
+  <!-- SEÇÃO HERO PARTÍCULAS -->
+  <section class="section-particulas-hero">
+    <canvas id="particulas"></canvas>
+
+    <div class="particulas-content">
+      <p class="eyebrow">Minha história começa aqui</p>
+      <h2>Bem vindos ao meu Portifólio</h2>
+      <p class="particulas-text">
+        Criado e desenvolvido com intuito de mostrar meus projetos, planos e minhas experiencias com desenvolvimento web
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTAINER CENTRAL -->
+  <main class="page-container" id="inicio"></main>
+
+  <!-- FAIXA MARQUEE FULL WIDTH -->
+  <section class="faixa-marquee">
+    <div class="marquee-track">
+      <span>MEU PORTIFÓLIO · MINHA JORNADA · MINHA HISTÓRIA · MEU HOBBIE · MEUS PROJETOS · E MINHAS HABILIDADES · </span>
+      <span>MEU PORTIFÓLIO · MINHA JORNADA · MINHA HISTÓRIA · MEU HOBBIE · MEUS PROJETOS · E MINHAS HABILIDADES · </span>
+      <span>MEU PORTIFÓLIO · MINHA JORNADA · MINHA HISTÓRIA · MEU HOBBIE · MEUS PROJETOS · E MINHAS HABILIDADES · </span>
+      <span>MEU PORTIFÓLIO · MINHA JORNADA · MINHA HISTÓRIA · MEU HOBBIE · MEUS PROJETOS · E MINHAS HABILIDADES · </span>
+      <span>MEU PORTIFÓLIO · MINHA JORNADA · MINHA HISTÓRIA · MEU HOBBIE · MEUS PROJETOS · E MINHAS HABILIDADES · </span>
+    </div>
+  </section>
+
+  <!-- NOVA SECÇÃO PRETA LOGO ABAIXO DA FAIXA -->
+  <section class="section-custom-black">
+    <div class="custom-black-content">
+      <p class="eyebrow">Pessoal</p>
+      <h2>SOBRE MIM</h2>
+      <p class="custom-black-text">
+        Me chamo Caio tenho 17 anos, sou novo na área na tecnologia mas se tornou minha paixão.
+      </p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO SOBRE MIM -->
+  <section class="section-white-bg" id="sobre">
+    <div class="white-section-content">
+      <p class="eyebrow-dark">Conheça Mais</p>
+      <h2>Sobre Mim</h2>
+      <p class="white-section-text">
+        Oi! Sou desenvolvedor de sites a pouco tempo, digamos a menos de um ano, posso dizer que seguir essa área de web desenvolvimento tem sido uma dos meus passa tempos preferidos, aprendi muito desde então.
+      </p>
+      <p class="white-section-text">
+        E então criei a MPY corporation, uma empresa para criação de sites, landing pages, gerenciamento de negócios, criação de aplicativos e de também sistemas, mas voltando a mim, sou novo na área mas a muito o que vir.
+      </p>
+    </div>
+  </section>
+
+<!-- SEÇÃO SOBRE A EMPRESA (FUNDO BRANCO - ALINHADO À DIREITA) -->
+  <section class="section-white-bg right-aligned" id="empresa">
+    <div class="white-section-content">
+      <p class="eyebrow-dark">HISTORIA DA EMPRESA</p>
+      <h2>Sobre a MyP Corporation</h2>
+      <p class="white-section-text">
+        A empresa primeiramente foi criada em 2021 cujo o nome era Retro studio, onde a logo era apenas uma pequena raposa roxa, o intuito era totalmente diferendo do que é atualmente, foi criada por mim e meu amigo.
+      </p>
+      <p class="white-section-text">
+        Criada para criação de conteudo no youtube, como pequenos filmes para entretenimento, mas que ficou por anos parada, e esse ano tudo mudou, seu nome foi alterado para Mpy corporation, e seu objetivo se tornou algo mais além apenas de criação de conteúdo.
+      </p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO GRADIENTE COM CARROSSEL DE SERVIÇOS -->
+  <section class="section-gradient-fade" id="servicos">
+    <div class="fade-content">
+      <p class="eyebrow" style="color: #7b2cbf;">SERVIÇOS QUE FAÇO</p>
+      <h2>Conheça Nossos Serviços</h2>
+      <p class="fade-description">
+        Serviços feitos de acordo com a necessidade do cliente.
+      </p>
+    </div>
+
+    <div class="carousel-container">
+      <div class="carousel-track" id="carousel-track">
+        <div class="project-card active">
+          <div class="card-tag">SERVIÇO 01</div>
+          <h3>LANDING PAGE</h3>
+          <p>Landing page desenvolvido com melhor qualidade.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="card-tag">SERVIÇO 02</div>
+          <h3>ACCOUNT MANAGER</h3>
+          <p>Account Manager/ gerenciamento de contas em redes sociais</p>
+        </div>
+
+        <div class="project-card">
+          <div class="card-tag">SERVIÇO 03</div>
+          <h3>CARTÃO DE VISITA</h3>
+          <p>Cartão de visita para seu negócio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE STACKS & FERRAMENTAS -->
+  <section class="section-tech-grid" id="skills">
+    <div class="tech-content">
+      <p class="eyebrow-purple">MEUS APRENDIZADOS</p>
+      <h2>Minhas Competências</h2>
+      
+      <div class="tech-grid">
+        <div class="tech-card" data-tooltip="Figma"><i class="fa-brands fa-figma" style="color: #F24E1E;"></i></div>
+        <div class="tech-card" data-tooltip="HTML5"><i class="fa-brands fa-html5" style="color: #E34F26;"></i></div>
+        <div class="tech-card" data-tooltip="CSS3"><i class="fa-brands fa-css3-alt" style="color: #1572B6;"></i></div>
+        <div class="tech-card" data-tooltip="Sass"><i class="fa-brands fa-sass" style="color: #CC6699;"></i></div>
+        <div class="tech-card" data-tooltip="JavaScript"><i class="fa-brands fa-js" style="color: #F7DF1E;"></i></div>
+        <div class="tech-card" data-tooltip="TypeScript"><span class="tech-text-icon" style="color: #3178C6;">TS</span></div>
+        <div class="tech-card" data-tooltip="React"><i class="fa-brands fa-react" style="color: #61DAFB;"></i></div>
+        <div class="tech-card" data-tooltip="Vue.js"><i class="fa-brands fa-vuejs" style="color: #4FC08D;"></i></div>
+        <div class="tech-card" data-tooltip="Node.js"><i class="fa-brands fa-node-js" style="color: #339933;"></i></div>
+        <div class="tech-card" data-tooltip="Python"><i class="fa-brands fa-python" style="color: #3776AB;"></i></div>
+        <div class="tech-card" data-tooltip="Bootstrap"><i class="fa-brands fa-bootstrap" style="color: #7952B3;"></i></div>
+        <div class="tech-card" data-tooltip="WordPress"><i class="fa-brands fa-wordpress" style="color: #21759B;"></i></div>
+        <div class="tech-card" data-tooltip="Shopify"><i class="fa-brands fa-shopify" style="color: #96BF48;"></i></div>
+        <div class="tech-card" data-tooltip="Git"><i class="fa-brands fa-git-alt" style="color: #F05032;"></i></div>
+        <div class="tech-card" data-tooltip="GitHub"><i class="fa-brands fa-github" style="color: #FFFFFF;"></i></div>
+        <div class="tech-card" data-tooltip="GitLab"><i class="fa-brands fa-gitlab" style="color: #FC6D26;"></i></div>
+        <div class="tech-card" data-tooltip="Docker"><i class="fa-brands fa-docker" style="color: #2496ED;"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE PROJETOS -->
+  <section class="section-projects-grid" id="projetos">
+    <div class="projects-content">
+      <p class="eyebrow-purple">MEU PORTFÓLIO</p>
+      <h2>Projetos em Destaque</h2>
+      <p class="projects-description">
+        Explore alguns dos principais projetos de desenvolvimento web e soluções digitais que criei recentemente.
+      </p>
+
+      <!-- BARRA DE CATEGORIAS -->
+      <div class="projects-categories animate-on-load">
+        <button class="cat-btn active" data-filter="todos">Todos</button>
+        <button class="cat-btn" data-filter="sites">Sites</button>
+        <button class="cat-btn" data-filter="sistemas">Sistemas</button>
+        <button class="cat-btn" data-filter="pequenos">Pequenos Projetos</button>
+        <button class="cat-btn" data-filter="design">Design</button>
+      </div>
+
+      <!-- GRELHA DE CARTÕES (TODOS OS PROJETOS DÁQUI PARA DENTRO) -->
+      <div class="projects-grid">
+        
+        <!-- Projeto 1 (Sites) -->
+        <div class="project-item-card" data-category="sites">
+          <div class="project-tag">SITES</div>
+          <h3>Site para barbearia SIMPLES</h3>
+          <p>WebSite para uma barbearia/apenas modelo e treinamento</p>
+          
+          <div class="project-tech-stack">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Git</span>
+            <span>GitHub</span>
+          </div>
+
+          <a href="#" class="button button-small button-gold" style="margin-top: 15px;">Ver Projeto ↗</a>
+        </div>
+
+        <!-- Projeto 2 (Sistemas) -->
+        <div class="project-item-card" data-category="sistemas">
+          <div class="project-tag">SISTEMAS</div>
+          <h3>To do list</h3>
+          <p>Lista para colocar tarefas e ir concluindo.</p>
+          
+          <div class="project-tech-stack">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>LocalStorage</span>
+          </div>
+
+          <a href="#" class="button button-small button-gold" style="margin-top: 15px;">Ver Projeto ↗</a>
+        </div>
+
+        <!-- Projeto 3 (Sistemas) -->
+        <div class="project-item-card" data-category="sistemas">
+          <div class="project-tag">SISTEMAS</div>
+          <h3>Clima em tempo real</h3>
+          <p>Sistema onde você pode ver as informações meteriológicas em tempo real.p>
+          
+          <div class="project-tech-stack">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>API</span>
+
+
+          </div>
+
+          <a href="#" class="button button-small button-gold" style="margin-top: 15px;">Ver Projeto ↗</a>
+        </div>
+
+        <!-- Projeto 4 (Sites) -->
+        <div class="project-item-card" data-category="sites">
+          <div class="project-tag">SITES</div>
+          <h3>Site para barbearia MÉDIO</h3>
+          <p>WebSite para uma barbearia/apenas modelo e treinamento</p>
+          
+          <div class="project-tech-stack">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Git</span>
+            <span>GitHub</span>
+          </div>
+
+          <a href="#" class="button button-small button-gold" style="margin-top: 15px;">Ver Projeto ↗</a>
+        </div>
+
+        <!-- Projeto 5 (Sites) -->
+        <div class="project-item-card" data-category="sites">
+          <div class="project-tag">SITES</div>
+          <h3>Site para barbearia COMPLETO</h3>
+          <p>WebSite para uma barbearia/apenas modelo e treinamento</p>
+          
+          <div class="project-tech-stack">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Git</span>
+            <span>GitHub</span>
+          </div>
+
+          <a href="#" class="button button-small button-gold" style="margin-top: 15px;">Ver Projeto ↗</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO TECNOLOGIA & SEGURANÇA -->
+  <section class="section-black-bg" id="contato">
+    <div class="black-section-content">
+      <p class="eyebrow">FALE COMIGO</p>
+      <h2>Gostou do meu portifólio???</h2>
+      <p class="black-section-text">
+        Entre em contato comigo caso queira conversar, ou caso tenha se intereçado com os tipos de servço que faço.
+      </p>
+
+      <a href="https://wa.me/5500999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os." 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="button button-whatsapp">
+        <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- BANNER PRE-FOOTER -->
+  <section class="banner-pre-footer">
+    <img src="imagens/minha logo.png" alt="MyP Corporation">
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <nav class="footer-nav" aria-label="Navegação do rodapé">
+        <a href="#inicio">Início</a>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-brand">
+        <a href="#inicio" class="footer-logo">My<span>P</span></a>
+        <p>© 2026 MyP Corporation. Todos os direitos reservados.</p>
+      </div>
+
+      <div class="footer-socials" aria-label="Redes sociais">
+        <a href="https://github.com/caiosilvaalmeida9-jpg" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+        <a href="https://www.tiktok.com/@mpy1435" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/mpycorporation/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61595567139089" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/caio-silva-almeida-7111b641b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DE LOGIN -->
+  <div class="modal-overlay" id="modal-login">
+    <div class="modal-card">
+      <button class="modal-close" id="btn-close-modal">&times;</button>
+      
+      <div class="modal-header">
+        <span class="eyebrow">MYP CORPORATION</span>
+        <h2>Acesse o <span>Portal VIP</span></h2>
+        <p>Acompanhe o desenvolvimento de projetos e relatórios de IA.</p>
+      </div>
+
+      <form class="login-form" id="form-login">
+        <div class="form-group">
+          <label for="login-email">E-mail Corporativo</label>
+          <input type="text" id="login-email" placeholder="nome@empresa.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="login-senha">Senha de Acesso</label>
+          <input type="password" id="login-senha" placeholder="••••••••" required>
+        </div>
+
+        <button type="submit" class="button button-gold btn-full">Acessar Portal ↗</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

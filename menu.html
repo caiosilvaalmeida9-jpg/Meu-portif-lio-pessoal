@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MyP Corporation: Links e Redes Sociais">
+  <title>MyP Corporation | Links</title>
+  
+  <!-- Tipografia e Ícones -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  
+<style>
+    body {
+      position: relative;
+      background-color: var(--preto-puro);
+      overflow-x: hidden;
+    }
+
+    #particulas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .link-page-container {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      max-width: 900px; /* Aumentado para o menu ocupar mais espaço horizontal */
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .profile-avatar {
+      width: 140px; /* Avatar bem maior */
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--dourado);
+      margin-bottom: 24px;
+      box-shadow: 0 15px 40px rgba(157, 78, 223, 0.4);
+    }
+
+    .profile-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.8rem; /* Título principal maior */
+      font-weight: 800;
+      color: var(--branco);
+      margin-bottom: 10px;
+    }
+
+    .profile-title span {
+      color: var(--dourado);
+    }
+
+    .profile-subtitle {
+      font-size: 1.25rem; /* Subtítulo maior */
+      color: var(--cinza-texto);
+      margin-bottom: 45px;
+    }
+
+    /* Tabela de links muito mais larga e espaçada */
+    .links-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: rgba(28, 28, 28, 0.92);
+      backdrop-filter: blur(12px);
+      border: 2.5px solid var(--cinza-borda);
+      border-radius: 28px; /* Cantos mais arredondados */
+      overflow: hidden;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
+    }
+
+    .links-table tr {
+      transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+      border-bottom: 1.5px solid var(--cinza-borda);
+    }
+
+    .links-table tr:last-child {
+      border-bottom: none;
+    }
+
+    /* Efeito de zoom bem acentuado ao passar o rato */
+    .links-table tr:hover {
+      background: var(--cinza-chumbo);
+      transform: scale(1.06);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9);
+      z-index: 10;
+      position: relative;
+    }
+
+    .links-table td {
+      padding: 26px 32px; /* Linhas muito mais altas e espaçosas */
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.25rem; /* Texto das opções bem maior */
+      font-weight: 600;
+    }
+
+    .links-table td:first-child {
+      width: 70%;
+      text-align: left;
+    }
+
+    .links-table td:last-child {
+      width: 30%;
+      text-align: right;
+    }
+
+    .links-table a {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: var(--branco);
+      text-decoration: none;
+    }
+
+    .links-table tr:hover a {
+      color: var(--dourado);
+    }
+
+    .links-table i {
+      font-size: 1.5rem !important; /* Ícones das redes sociais maiores */
+    }
+
+    .btn-cell-action {
+      color: var(--cinza-texto);
+      font-size: 1.05rem;
+      font-weight: 500;
+      justify-content: flex-end;
+    }
+  </style>
+</head>
+
+<body>
+
+  <canvas id="particulas"></canvas>
+
+  <main class="link-page-container">
+    <!-- Avatar / Logótipo -->
+    <img src="imagens/minha logo heather.png" alt="MyP Corporation" class="profile-avatar animate-on-load">
+    
+    <h1 class="profile-title animate-on-load">MyP <span>Corporation</span></h1>
+    <p class="profile-subtitle animate-on-load">Inovação, Tecnologia e Desenvolvimento Digital</p>
+
+    <!-- Tabela de Links com Borda Unificada -->
+    <table class="links-table animate-on-load">
+      
+      <tr>
+        <td>
+          <a href="index.html">
+            <i class="fa-solid fa-globe" style="color: var(--dourado); font-size: 1.3rem;"></i>
+            Acessar Portfólio
+          </a>
+        </td>
+        <td>
+          <a href="index.html" class="btn-cell-action">
+            Visitar <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="https://wa.me/5511932079687?text=Olá!%20Vim%20pelo%20link%20do%20perfil." target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp" style="color: #25d366; font-size: 1.3rem;"></i>
+            Falar no WhatsApp
+          </a>
+        </td>
+        <td>
+          <a href="https://wa.me/5511932079687?text=Olá!%20Vim%20pelo%20link%20do%20perfil." target="_blank" rel="noopener noreferrer" class="btn-cell-action">
+            Conversar <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="https://www.instagram.com/mpycorporation/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram" style="color: #e1306c; font-size: 1.3rem;"></i>
+            Instagram
+          </a>
+        </td>
+        <td>
+          <a href="https://www.instagram.com/mpycorporation/" target="_blank" rel="noopener noreferrer" class="btn-cell-action">
+            Seguir <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="https://www.facebook.com/profile.php?id=61595567139089" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-facebook-f" style="color: #1877f2; font-size: 1.3rem;"></i>
+            Facebook
+          </a>
+        </td>
+        <td>
+          <a href="https://www.facebook.com/profile.php?id=61595567139089" target="_blank" rel="noopener noreferrer" class="btn-cell-action">
+            Curtir <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-x-twitter" style="color: #ffffff; font-size: 1.3rem;"></i>
+            X (Twitter)
+          </a>
+        </td>
+        <td>
+          <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="btn-cell-action">
+            Aceder <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="https://www.linkedin.com/in/caio-silva-almeida-7111b641b/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin-in" style="color: #0077b5; font-size: 1.3rem;"></i>
+            LinkedIn
+          </a>
+        </td>
+        <td>
+          <a href="https://www.linkedin.com/in/caio-silva-almeida-7111b641b/" target="_blank" rel="noopener noreferrer" class="btn-cell-action">
+            Conectar <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="https://github.com/caiosilvaalmeida9-jpg" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github" style="color: #ffffff; font-size: 1.3rem;"></i>
+            GitHub
+          </a>
+        </td>
+        <td>
+          <a href="https://github.com/caiosilvaalmeida9-jpg" target="_blank" rel="noopener noreferrer" class="btn-cell-action">
+            Ver Código <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="https://www.tiktok.com/@mpy1435" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-tiktok" style="color: #ffffff; font-size: 1.3rem;"></i>
+            TikTok
+          </a>
+        </td>
+        <td>
+          <a href="https://www.tiktok.com/@mpy1435" target="_blank" rel="noopener noreferrer" class="btn-cell-action">
+            Assistir <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </td>
+      </tr>
+
+    </table>
+  </main>
+
+  <!-- Script de Partículas + Animação de Entrada ao carregar a página -->
+  <script>
+    // Animação de Entrada de Baixo para Cima ao carregar
+    document.addEventListener("DOMContentLoaded", () => {
+      const elementosAnimados = document.querySelectorAll(".animate-on-load");
+      
+      // Pequeno atraso para garantir que o navegador processou os elementos
+      setTimeout(() => {
+        elementosAnimados.forEach((el) => {
+          el.classList.add("visible");
+        });
+      }, 100);
+    });
+
+    // Partículas de Fundo
+    const canvas = document.getElementById("particulas");
+    if (canvas) {
+      const ctx = canvas.getContext("2d");
+      let particulas = [];
+
+      function ajustarCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+
+      class Particula {
+        constructor() {
+          this.reset(true);
+        }
+
+        reset(inicial = false) {
+          this.x = Math.random() * canvas.width;
+          this.y = inicial ? Math.random() * canvas.height : canvas.height + 10;
+          this.tamanho = Math.random() * 4 + 2; 
+          this.velocidade = Math.random() * 1.2 + 0.4;
+          this.opacidade = Math.random() * 0.6 + 0.3;
+        }
+
+        desenhar() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.tamanho, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(255, 255, 255, ${this.opacidade})`;
+          ctx.fill();
+        }
+
+        atualizar() {
+          this.y -= this.velocidade;
+          this.opacidade -= 0.001;
+
+          if (this.y < -10 || this.opacidade <= 0) {
+            this.reset(false);
+          }
+        }
+      }
+
+      function criarParticulas() {
+        particulas = [];
+        for (let i = 0; i < 300; i++) {
+          particulas.push(new Particula());
+        }
+      }
+
+      function animar() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particulas.forEach((p) => {
+          p.atualizar();
+          p.desenhar();
+        });
+        requestAnimationFrame(animar);
+      }
+
+      ajustarCanvas();
+      criarParticulas();
+      animar();
+
+      window.addEventListener("resize", () => {
+        ajustarCanvas();
+        criarParticulas();
+      });
+    }
+  </script>
+</body>
+</html>
