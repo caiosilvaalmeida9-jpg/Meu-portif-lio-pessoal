@@ -16,6 +16,8 @@
   
 <style>
     body {
+
+      
       position: relative;
       background-color: var(--preto-puro);
       overflow-x: hidden;
@@ -141,11 +143,49 @@
       font-size: 1.05rem;
       font-weight: 500;
       justify-content: flex-end;
+
+      /* CURSOR PERSONALIZADO (BRANCO E COM LUZ) */
+  @media (min-width: 768px) {
+    body {
+      cursor: none;
+    }
+
+    a, button, .links-table tr {
+      cursor: none;
+    }
+
+    .custom-cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 10000;
+      box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8), 
+                  0 0 40px 10px rgba(157, 78, 223, 0.4);
+      transition: width 0.2s ease, height 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    /* Efeito de destaque ao passar por cima dos links/tabela */
+    .links-table tr:hover ~ .custom-cursor,
+    a:hover ~ .custom-cursor {
+      width: 40px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border: 2px solid #ffffff;
+    }
+  }
     }
   </style>
 </head>
 
 <body>
+
+  <!-- Bolinha do Cursor Personalizado -->
+  <div class="custom-cursor"></div>
 
   <canvas id="particulas"></canvas>
 
@@ -352,6 +392,20 @@
       window.addEventListener("resize", () => {
         ajustarCanvas();
         criarParticulas();
+      });
+    }
+
+    // SEGUIDOR DE CURSOR (BOLINHA) NO MENU
+    const cursor = document.querySelector('.custom-cursor');
+
+    if (cursor) {
+      window.addEventListener('mousemove', (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+
+        // Centra a bolinha perfeitamente no ponteiro (24px / 2 = 12px)
+        cursor.style.left = `${x - 12}px`;
+        cursor.style.top = `${y - 12}px`;
       });
     }
   </script>
